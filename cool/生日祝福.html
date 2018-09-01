@@ -11,7 +11,8 @@
     </style>
 </head>
     <audio src="./MP3/ヨルシカ - 靴の花火.mp3" controls="controls" type="audio/wav" autoplay="autoplay" loop="loop"></audio>
-    <img src="./image/1.jpg"/> <img id="2" src="image/2.jpg"/>
+<img src="./image/1.jpg" ismap><img id="2" src="image/2.jpg"/>
+
 <h1 id="huohua"> ヨルシカ - 靴の花火</h1>
 <nav>
     <ul>
@@ -22,7 +23,7 @@
         <li><a href="image/2.jpg">2</a></li>
     </ul>
 </nav>
-<pre onclick="ray()"><p id="gg"></p>
+<pre id="g" onclick="ray()"><p id="gg"></p>
     看烟花 烟花
       `'.
  .`' ` * .
@@ -97,7 +98,9 @@
 </body>
 <script>
     function ray(){document.getElementById("huohua").innerHTML="happy birthday";
-                    document.getElementById("ai").innerHTML="生日快乐";alert("生日快乐")}
+                    document.getElementById("ai").innerHTML="生日快乐";
+                    document.getElementById("g").innerHTML=gg+"生日快乐";
+                    alert("生日快乐")}
                     var gg=prompt("你的名字？")
                     if(gg=="？？"){document.write("？？生日快乐")}
                     else{document.getElementById("gg").innerHTML=gg+"生日快乐"}
