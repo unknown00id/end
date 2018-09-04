@@ -17,7 +17,7 @@
 
     </style>
  </head>
-<body><input id="qq" type="button" align="center" onclick="me()" value="生日祝福"></input>
+<body><div id="bb"><input id="qq" type="button" align="center" onclick="me()" value="生日祝福"></input></div>
     <audio src="./MP3/ヨルシカ - 靴の花火.mp3" controls="controls" type="audio/wav" autoplay="autoplay" loop="loop"></audio>
 <img src="./image/1.jpg" ismap><img id="2" src="image/2.jpg"/>
 
@@ -117,6 +117,6 @@
                     var gg=prompt("你的名字？")
                     if(gg=="？？"){document.write("？？生日快乐")}
                     else{document.getElementById("gg").innerHTML=gg+"生日快乐"}
-     function me(){qq.removechild(qq)}
+     function me(){bb.removeChild(qq)}
     </script>
 </html>
