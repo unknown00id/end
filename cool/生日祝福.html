@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>生日祝福</title>
     <style>
         @keyframes cmd {
          from{opacity: 0}to{opacity: 100}
         }
         h1,#ai,#bi,#ci,#di{animation: cmd 1s infinite}
-        #qq{font-size:100px;width:1000px;height: 750px;
-        background: url("image/00.png")}
+        #qq{font-size:100px;width:1000px;height: 750px;margin:auto;position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: url("image/00.png");}
 
     </style>
-</head><p id="qq" align="center">生日祝福</p>
+ </head>
+<body><input id="qq" type="button" align="center" onclick="me()" value="生日祝福"></input>
     <audio src="./MP3/ヨルシカ - 靴の花火.mp3" controls="controls" type="audio/wav" autoplay="autoplay" loop="loop"></audio>
 <img src="./image/1.jpg" ismap><img id="2" src="image/2.jpg"/>
 
-<h1 id="huohua"> ヨルシカ - 靴の花火</h1>
+<h1 id="huohua"title="特别推荐ヾ(ﾟ∀ﾟゞ)"> ヨルシカ - 靴の花火</h1>
 <nav>咱喜欢的曲目表
     <ul>
         <li><a target="_blank" id="ai" href="MP3/ヨルシカ%20-%20靴の花火.mp3">ヨルシカ - 靴の花火</a></li>
@@ -112,5 +117,6 @@
                     var gg=prompt("你的名字？")
                     if(gg=="？？"){document.write("？？生日快乐")}
                     else{document.getElementById("gg").innerHTML=gg+"生日快乐"}
+     function me(){qq.removechild(qq)}
     </script>
 </html>
