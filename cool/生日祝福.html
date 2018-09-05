@@ -14,14 +14,15 @@
             bottom: 0;
             right: 0;
             background: url("image/00.png");}
-        #a{width:600px;height:322px;background-image:url("./image/1.jpg")}
+        #a{width:600px;height:322px;background-image:url("./image/1.jpg");color:#FFFFFF}
+        body{background:url("./image/0.jpg")}
 
     </style>
  </head>
 <body><div id="bb"><input id="qq" type="button" align="center" onclick="me()" value="生日祝福"></input></div>
     <audio src="./MP3/ヨルシカ - 靴の花火.mp3" controls="controls" type="audio/wav" autoplay="autoplay" loop="loop"></audio>
-<div id="a" onclick="you()" align="center"></div>
-<img id="2" src="image/2.jpg"/>
+<div id="a" onclick="you()" align="center">点我？？</div>
+<img id="2" src="image/2.jpg"/></img>
 
 <h1 id="huohua"title="特别推荐ヾ(ﾟ∀ﾟゞ)"> ヨルシカ - 靴の花火</h1>
 <nav>咱喜欢的曲目表
@@ -38,8 +39,8 @@
         <li><a href="image/2.jpg">2</a></li>
     </ul>
 </nav>
-<pre id="g" onclick="ray()"><p id="gg"></p>
-    看烟花 烟花
+<pre id="g" onclick="ray()" style="color: #FFFFFF" font-size="100px"><p id="gg"></p>
+点我？？
       `'.
  .`' ` * .
 :  *  *|  :
@@ -111,12 +112,12 @@
 </pre>
 <a href="#bb">反上</a>
 </body>
-<script>
+<script>var gg=prompt("你的名字？")
     function ray(){document.getElementById("huohua").innerHTML="happy birthday";
                     document.getElementById("ai").innerHTML="生日快乐";
                     document.getElementById("g").innerHTML=gg+"生日快乐";
                     alert("生日快乐")}
-                    var gg=prompt("你的名字？")
+
                     if(gg=="？？"){document.write("？？生日快乐")}
                     else{document.getElementById("gg").innerHTML=gg+"生日快乐"}
      function me(){bb.removeChild(qq)}
