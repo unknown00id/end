@@ -14,23 +14,24 @@
             bottom: 0;
             right: 0;
             background: url("image/00.png");}
-        #a{width:600px;height:322px;background-image:url("./image/1.jpg");color:#FFFFFF}
+        #a{width:600px;height:322px;background-image:url("./image/1.jpg");color:blue}
         body{background:url("./image/0.jpg");background-size:100% 100%}
 
     </style>
  </head>
-<body><div id="bb"><input id="qq" type="button" align="center" onclick="me()" touchstart="me()" value="生日祝福"></input></div>
-    <audio src="./MP3/ヨルシカ - 靴の花火.mp3" controls="controls" type="audio/wav" autoplay="autoplay" loop="loop"></audio>
+<div id="bb"><input id="qq" type="button" align="center" onclick="me()" touchstart="me()" value="生日祝福"></input></div>
+    <audio id="aaa" src="./MP3/ヨルシカ - 靴の花火.mp3" controls="controls" type="audio/wav" autoplay="autoplay" loop="loop"></audio>
+<input type="button"onclick="shang()" value="上一首"><input type="button"onclick="xia()" value="下一首">
 <div id="a" onclick="you()" touchstart="you()" align="center">点我？？</div>
-<img id="2" src="image/2.jpg"/></img>
+<img id="2i" src="image/2.jpg"/></img>
 
 <h1 id="huohua"title="特别推荐ヾ(ﾟ∀ﾟゞ)"style="color: crimson"> ヨルシカ - 靴の花火</h1>
 <nav style="color: crimson">咱喜欢的曲目表
     <ul>
-        <li><a target="_blank" id="ai" href="MP3/ヨルシカ%20-%20靴の花火.mp3">ヨルシカ - 靴の花火</a></li>
-        <li><a target="_blank" id="bi" href="MP3/ヨルシカ%20-%20ただ君に晴れ.mp3">ヨルシカ - ただ君に晴れ</a></li>
-        <li><a target="_blank" id="ci" href="MP3/ヨルシカ - 準透明少年.mp3">ヨルシカ - 準透明少年</a></li>
-        <li><a target="_blank" id="di" href="MP3/ヨルシカ - 冬眠.mp3">ヨルシカ - 冬眠</a></li>
+        <li><a target="_blank" id="1" href="MP3/ヨルシカ%20-%20靴の花火.mp3">ヨルシカ - 靴の花火</a></li>
+        <li><a target="_blank" id="2" href="MP3/ヨルシカ%20-%20ただ君に晴れ.mp3">ヨルシカ - ただ君に晴れ</a></li>
+        <li><a target="_blank" id="3" href="MP3/ヨルシカ - 準透明少年.mp3">ヨルシカ - 準透明少年</a></li>
+        <li><a target="_blank" id="4" href="MP3/ヨルシカ - 冬眠.mp3">ヨルシカ - 冬眠</a></li>
     网站</ul>
     <ul>
             <li><a href="http://www.baidu.com" target="_blank">百度</a></li>
@@ -124,8 +125,17 @@
     var so="chuxian"
     function you() { if (so=="chuxian"){document.getElementById("a").style.width="1111px";document.getElementById("a").style.height="1111px";document.getElementById("a").style.background="url('./image/13190431.jpg')";so="xiaoshi"}
     else{document.getElementById("a").style.width="600px";document.getElementById("a").style.height="322px";document.getElementById("a").style.background="url('./image/1.jpg')";so="chuxian"}}
+    var i=1
 
+   function xia() {i++;if (i<1){alert("没有了");i=1}
+   else if(i>4){alert("只有4首。。。");i=4}
+   else{i=i};document.getElementById("aaa").src="./MP3/"+document.getElementById(i).innerHTML+".mp3"
 
+   }
+
+   function shang(){i--;if (i<1){alert("没有了");i=1}
+   else if(i>4){alert("只有4首。。。");i=4}
+   else{i=i};document.getElementById("aaa").src="./MP3/"+document.getElementById(i).innerHTML+".mp3"}
 console.info("作者：酷")
 
 
