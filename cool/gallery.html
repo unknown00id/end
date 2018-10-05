@@ -32,20 +32,26 @@
     0% {font-size:0px}
     60% {font-size:0px}
     75% {font-size:50px}
-    100% {font-size:0px}}
-#a {;
+    100% {font-size:0px} }
+#a {
     animation:fangda 10s;
-     text-align:center}
+     }
     #b{animation:fangda2 10s;text-align:center}
     #c{animation:fangda3 10s;text-align:center}
     #d {animation:fangda4 10s;text-align:center}
 
 </style>
+<style></style>
 
-<body><p id="a">你以为这是个空白页面？</p>
+<body id="boy"><p id="a" align="center">你以为这是个空白页面？</p>
        <p id="b">其实这是个画廊!!</p>
        <p id="c">那么现在......</p>
        <P id="d">gallery on </P>
+
 </body>
-<script></script>
+<script>var o=document.getElementById("d")
+o.addEventListener("webkitAnimationEnd",
+
+function () {document.getElementById("a").innerHTML="gallery";boy.removeChild(b);boy.removeChild(c);boy.removeChild(d);})</script>
+
 </html>
