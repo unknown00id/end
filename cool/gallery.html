@@ -50,9 +50,52 @@
                                                             transform:  rotate(30deg);width:180px;height:180px}
 
     }
+#o{position:absolute;left:300px;
+    width:200px;height:108px;transform:  rotate(30deg);animation:fangda6 17s}
+@keyframes fangda6 {0%{width:0px;height:0px;}70%{width:0px;height:0px;position:absolute;
+                                                 transform:  rotate(0deg);left:50%;}100%{position:absolute;
+                                                                                        left:300px;
+                                                                                        transform:  rotate(30deg);width:200px;height:108px}}
+    #t{position:absolute;left:500px;
+        width:213px;height:300px;transform:  rotate(45deg);animation:fangda7 20s}
+@keyframes fangda7 {0%{width:0px;height:0px;}70%{width:0px;height:0px;position:absolute;
+                                                 transform:  rotate(0deg);left:50%;}100%{position:absolute;
+                                                                                        left:500px;
+                                                                                        transform:  rotate(45deg);width:213px;height:300px}}
+#f{position:absolute;left:600px;top:500px;
+    width:347px;height:245px;transform:  rotate(45deg);animation:fangda8 24s}
+@keyframes fangda8 {0%{width:0px;height:0px;}70%{width:0px;height:0px;position:absolute;
+                                                 transform:  rotate(-30deg);left:50%;}100%{position:absolute;
+                                                                                        left:600px;top:500px;
+                                                                                        transform:  rotate(45deg);width:347px;height:245px}}
+#fi{position:absolute;left:800px;top:500px;
+    width:310px;height:215px;transform:  rotate(45deg);animation:fangda9 27s}
+@keyframes fangda9 {0%{width:0px;height:0px;}70%{width:0px;height:0px;position:absolute;
+                                                 transform:  rotate(0deg);left:50%;}100%{position:absolute;
+                                                                                          left:800px;top:500px;
+                                                                                          transform:  rotate(45deg);width:310px;height:215px}}
+#si{position:absolute;left:1000px;
+    width:321px;height:450px;transform:  rotate(45deg);animation:fangda10 30s}
+@keyframes fangda10 {0%{width:0px;height:0px;}70%{width:0px;height:0px;position:absolute;
+    transform:  rotate(0deg);left:50%;}100%{position:absolute;
+    left:1000px;
+    transform:  rotate(45deg);width:321px;height:450px}}
+
+#se{position:absolute;left:250px;top:500px;
+    width:321px;height:200px;transform:  rotate(45deg);animation:fangda11 33s}
+@keyframes fangda11 {0%{width:0px;height:0px;}70%{width:0px;height:0px;position:absolute;
+                                                  transform:  rotate(0deg);left:50%;}100%{position:absolute;
+                                                                                         left:250px;top:500px;
+                                                                                         transform:  rotate(45deg);width:321px;height:200px}}
+#obj{position:absolute;left:50px;top:500px;
+    background-color:red;width:120px;height:200px;padding:40px;color:#ffffff;transform:  rotate(45deg);animation:fangda12 35s}
+@keyframes fangda12 {0%{width:0px;height:0px;padding:0px;font-size:0px}70%{width:0px;height:0px;position:absolute;padding:0px;font-size:0px;
+                                                  transform:  rotate(0deg);left:50%;}100%{position:absolute;
+                                                                                         left:50px;top:500px;
+                                                                                         transform:  rotate(45deg);background-color:yellow;width:120px;height:200px;padding:40px;color:yellow;font-size:40px}}
 
 </style>
-<style></style>
+
 
 <body id="boy"><p id="a" align="center">你以为这是个空白页面？</p>
        <p id="b">其实这是个画廊!!</p>
@@ -69,7 +112,7 @@
 
 
 </Div>
-<div id="obj" onmouseover="mOver()" onmouseout="mOut()" style="background-color:red;width:120px;height:20px;padding:40px;color:#ffffff;">碰我啊</div>
+<div id="obj" onmouseover="mOver()" onmouseout="mOut()">碰我啊</div>
 
 </body>
 <script>var o=document.getElementById("d")
