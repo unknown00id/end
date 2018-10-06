@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>gallery</title>
+    <title id="head">gallery</title>
 </head>
 <style>@keyframes fangda {0% {font-size:0px}
                              15% {font-size:50px}
@@ -40,6 +40,17 @@
     #c{animation:fangda3 10s;text-align:center}
     #d {animation:fangda4 10s;text-align:center}
 
+
+
+#z{position:absolute;left:100px;
+    transform:  rotate(30deg);width:180px;height:180px; animation:fangda5 14s}
+    @keyframes fangda5 {0%{width:0px;height:0px;}70%{width:0px;height:0px;position:absolute;
+                                                     transform:  rotate(0deg);left:50%;}100%{position:absolute;
+                                                            left:100px;
+                                                            transform:  rotate(30deg);width:180px;height:180px}
+
+    }
+
 </style>
 <style></style>
 
@@ -47,11 +58,32 @@
        <p id="b">其实这是个画廊!!</p>
        <p id="c">那么现在......</p>
        <P id="d">gallery on </P>
+<div>
+    <div><a href="image/0.jpg" target="_blank"> <img id="z" src="./image/0.jpg"></img></a></div>
+   <div> <a href="image/1.jpg" target="_blank"> <img id="o" src="./image/1.jpg"></img></a></div>
+    <div><a href="image/2.jpg" target="_blank"> <img id="t" src="./image/2.jpg"></img></a></div>
+    <div><a href="image/4.png" target="_blank"> <img id="f" src="./image/4.png"></img></a></div>
+   <div> <a href="image/5.png" target="_blank"> <img id="fi" src="./image/5.png"></img></a></div>
+    <div><a href="image/6.jpg" target="_blank"> <img id="si" src="./image/6.jpg"></img></a></div>
+    <div><a href="image/7.jpg" target="_blank"> <img id="se" src="./image/7.jpg"></img></a></div>
+
+
+</Div>
+<div id="obj" onmouseover="mOver()" onmouseout="mOut()" style="background-color:red;width:120px;height:20px;padding:40px;color:#ffffff;">碰我啊</div>
 
 </body>
 <script>var o=document.getElementById("d")
 o.addEventListener("webkitAnimationEnd",
 
-function () {document.getElementById("a").innerHTML="gallery";boy.removeChild(b);boy.removeChild(c);boy.removeChild(d);})</script>
+function () {document.getElementById("a").innerHTML="gallery";boy.removeChild(b);boy.removeChild(c);boy.removeChild(d);head.innerHTML="gallery on"
+    })
+function mOver()
+{
+obj.innerHTML="求你放手"
+}
 
+function mOut()
+{
+obj.innerHTML="碰我啊 "
+}</script>
 </html>
